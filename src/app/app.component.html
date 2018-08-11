@@ -3,10 +3,12 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-<ul>
-  <li *ngFor = 'let qoute of qoutes'>{{qoute.name}}</li>
-</ul>
+  <ul>
+    <div *ngFor = 'let qoute of qoutes'>
+      <app-qoute-details>{{qoute.name}}</app-qoute-details>
+    </div>
+  </ul>
 </div>
-
+<app-qoute></app-qoute>
 
 
