@@ -16,6 +16,11 @@ export class QouteComponent implements OnInit {
    toogleDetails(index) {
    this.qoutes[index].showDescription = !this.qoutes[index].showDescription;
    }
+   completeQoute(isComplete, index) {
+     if (isComplete) {
+       this.qoutes.splice(index, 1);
+     }
+   }
    /*
   qouteComplete(complete: boolean) {
     this.isComplete.emit(complete);
@@ -28,7 +33,8 @@ export class QouteComponent implements OnInit {
           }
         }
       }
-  */
+      */
+
   constructor() { }
 
   ngOnInit() {}
