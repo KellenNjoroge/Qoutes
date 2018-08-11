@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import {Qoute} from '../qoute';
 @Component({
   selector: 'app-qoute-details',
@@ -7,7 +7,11 @@ import {Qoute} from '../qoute';
 })
 export class QouteDetailsComponent implements OnInit {
   @Input() qoute: Qoute;
-  constructor() { }
+  @Output() isComplete = new EventEmitter<boolean>();
+  qouteComplete(complete: boolean) {
+    this.isComplete.emit(complete);
+  }
+  constructor() {}
 
   ngOnInit() {
   }

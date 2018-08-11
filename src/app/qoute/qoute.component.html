@@ -1,6 +1,13 @@
 
-  <h1>My Goals</h1>
+<h1>My Qoutes</h1>
+<hr>
+
 <ul>
-    <li *ngFor='let qoute of qoutes'>{{qoute.name}}</li>
+  <div *ngFor='let qoute of qoutes; let i = index'>
+   <li >{{qoute.name}}</li>
+   <button  (click)='toogleDetails(i)'>Toogle Details</button>
+    <app-qoute-details *ngIf="qoute.showDescription" [qoute]='qoute'></app-qoute-details>
+  </div>
 </ul>
-<app-qoute></app-qoute>
+
+<!--(isComplete)= 'deleteQoute($event, i)-->'
