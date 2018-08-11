@@ -16,24 +16,24 @@ export class QouteComponent implements OnInit {
    toogleDetails(index) {
    this.qoutes[index].showDescription = !this.qoutes[index].showDescription;
    }
+   /*
    completeQoute(isComplete, index) {
      if (isComplete) {
        this.qoutes.splice(index, 1);
      }
    }
-   /*
   qouteComplete(complete: boolean) {
     this.isComplete.emit(complete);
     }
+    */
   deleteQoute(isComplete, index) {
     if (isComplete) {
-        let toDelete = confirm(`Are you sure you want to delete ${this.qoutes[index].name}`);
+        const toDelete = confirm(`Are you sure you want to delete ${this.qoutes[index].name}`);
         if (toDelete) {
             this.qoutes.splice(index, 1);
           }
         }
       }
-      */
 
   constructor() { }
 

@@ -6,8 +6,7 @@
   <div *ngFor='let qoute of qoutes; let i = index'>
    <li >{{qoute.name}}</li>
    <button  (click)='toogleDetails(i)'>Toogle Details</button>
-    <app-qoute-details *ngIf="qoute.showDescription" [qoute]='qoute' (isComplete)= 'completeQoute ($event, i)'></app-qoute-details>
+    <app-qoute-details *ngIf="qoute.showDescription" [qoute]='qoute' (isComplete)= 'deleteQoute ($event, i)'></app-qoute-details>
   </div>
 </ul>
 
-<!---->'
