@@ -1,12 +1,13 @@
 
 <h1>Famous Qoutes</h1>
 <hr>
-
-<ul>
+<div class = "container">
+  <ul>
   <div *ngFor='let qoute of qoutes; let i = index'>
-   <li >{{qoute.name}}</li>
+   <h4 >{{qoute.name}}</h4>
    <button  (click)='toogleDetails(i)'>Toogle Details</button>
     <app-qoute-details *ngIf="qoute.showDescription" [qoute]='qoute' (isComplete)= 'deleteQoute ($event, i)'></app-qoute-details>
   </div>
-</ul>
+  </ul>
+</div>
 
