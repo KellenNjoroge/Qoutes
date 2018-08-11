@@ -13,19 +13,16 @@ export class QouteComponent implements OnInit {
     new Qoute(3, 'Love is never wasted for its value does not rest in its reprocity', 'C.S.Lewis'),
     new Qoute(4, ' Art is to console those who are broken by life', 'Van Gogh'),
    ];
-   toogleDetails(index) {
+  toogleDetails(index) {
    this.qoutes[index].showDescription = !this.qoutes[index].showDescription;
    }
-   /*
-   completeQoute(isComplete, index) {
-     if (isComplete) {
-       this.qoutes.splice(index, 1);
-     }
-   }
-  qouteComplete(complete: boolean) {
-    this.isComplete.emit(complete);
+
+  addNewQoute(qoute) {
+    const qouteLength = this.qoutes.length;
+    qoute.id = qouteLength + 1;
+    this.qoutes.push(qoute);
+
     }
-    */
   deleteQoute(isComplete, index) {
     if (isComplete) {
         const toDelete = confirm(`Are you sure you want to delete ${this.qoutes[index].name}`);
