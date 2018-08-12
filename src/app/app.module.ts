@@ -6,6 +6,7 @@ import { QouteComponent } from './qoute/qoute.component';
 import { QouteDetailsComponent } from './qoute-details/qoute-details.component';
 import { QouteFormComponent } from './qoute-form/qoute-form.component';
 import { CounterInputComponent } from './counter-input/counter-input.component';
+import { BackgroundImageDirective } from './background-image.directive';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { CounterInputComponent } from './counter-input/counter-input.component';
     QouteComponent,
     QouteDetailsComponent,
     QouteFormComponent,
-    CounterInputComponent
+    CounterInputComponent,
+    BackgroundImageDirective
   ],
   imports: [
     BrowserModule,
