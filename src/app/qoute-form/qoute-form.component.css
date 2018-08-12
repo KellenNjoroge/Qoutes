@@ -1,8 +1,5 @@
-.container-fluid {
-  padding: 50px;
-  -moz-box-shadow:    5px 5px 5px 6px #ccc;
-  -webkit-box-shadow: 5px 5px 5px 6px #ccc;
-  box-shadow:         5px 5px 5px 6px #ccc;
-
-
-}
+.button {padding: 10px 10px
+};
+.row2{
+  text-align: center
+};
