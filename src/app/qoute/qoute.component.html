@@ -1,20 +1,29 @@
 
 <h1>Famous Qoutes</h1>
 <hr>
-<div class = "container">
-  <ul>
-    <div *ngFor='let qoute of qoutes; let i = index'>
-      <div>
-        <h4 >{{qoute.name}}</h4>
-        <button  class = "btn btn-primary"(click)='toogleDetails(i)'>Toogle Details</button>
-      </div>
-      <div *ngIf="qoute.showDescription">
-        <app-qoute-details  [qoute]='qoute' (isComplete)= 'deleteQoute ($event, i)'></app-qoute-details>
+<div class ="row">
+  <div class="col-xl-6">
+    <div class="card">
+      <ul>
+        <div *ngFor='let qoute of qoutes; let i = index'>
+          <div>
+            <h4>{{qoute.name}}</h4>
+            <button  class = "btn btn-primary"(click)='toogleDetails(i)'>Toogle Details</button>
+          </div>
+          <div *ngIf="qoute.showDescription">
+          <app-qoute-details  [qoute]='qoute' (isComplete)= 'deleteQoute ($event, i)'></app-qoute-details>
+          </div>
+            <app-counter-input></app-counter-input>
+        </div>
+      </ul>
+    </div>
+  </div>
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="row2">
+        <app-qoute-form (addQoute)="addNewQoute($event)"></app-qoute-form>
       </div>
     </div>
-  </ul>
-  <div class="row">
-      <app-qoute-form (addQoute)="addNewQoute($event)"></app-qoute-form>
   </div>
 </div>
 

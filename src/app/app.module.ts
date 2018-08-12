@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import { QouteComponent } from './qoute/qoute.component';
 import { QouteDetailsComponent } from './qoute-details/qoute-details.component';
 import { QouteFormComponent } from './qoute-form/qoute-form.component';
-import { QouteCounterComponent } from './qoute-counter/qoute-counter.component';
+import { CounterInputComponent } from './counter-input/counter-input.component';
+/*import { BackgroundImageDirective } from './background-image.directive';*/
 
 @NgModule({
   declarations: [
@@ -13,11 +14,12 @@ import { QouteCounterComponent } from './qoute-counter/qoute-counter.component';
     QouteComponent,
     QouteDetailsComponent,
     QouteFormComponent,
-    QouteCounterComponent
+    CounterInputComponent,
+    /*BackgroundImageDirective*/
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
