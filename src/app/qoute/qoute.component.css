@@ -2,3 +2,7 @@
   padding: 70px;
 
 }
+.button:hover {
+  color:white;
+  opacity: 0.9;
+}
