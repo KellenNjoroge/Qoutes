@@ -17,7 +17,7 @@ import { CounterInputComponent } from './counter-input/counter-input.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

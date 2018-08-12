@@ -11,6 +11,7 @@
       <div *ngIf="qoute.showDescription">
         <app-qoute-details  [qoute]='qoute' (isComplete)= 'deleteQoute ($event, i)'></app-qoute-details>
       </div>
+      <app-counter-input></app-counter-input>
     </div>
   </ul>
   <div class="row">
