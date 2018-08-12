@@ -1,27 +1,46 @@
 # Qoutes
 
+## Description
+
+An app that shows the trending qoutes in society
+
+### Specifications
+
+A simple app to test on basic knowledge of building ann app using angular js the node commands. Also a true test of Grit for first users of Angular.
+
+## Link
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+cureent framework is angularjs
+currently using HTML and CSS and JavaScript using Bootstrap and Jquery CDN
 
-## Build
+### Link
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+[Qoutes](https://github.com/KellenNjoroge/Qoutes)
 
-## Running unit tests
+### prerequisites
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* web browser
+* git
+* node js
+* angular CLI
 
-## Running end-to-end tests
+### installation
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+[yep](https://kellennjoroge.github.io/Qoutes)
 
-## Further help
+## bugs
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+cannot operate on explorer
+cannot be used for real time data collection for upvotes and downvotes
+
+### License
+
+Licensed under the [MIT license](KELLEN).
