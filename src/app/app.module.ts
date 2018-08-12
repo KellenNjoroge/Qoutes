@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { QouteComponent } from './qoute/qoute.component';
 import { QouteDetailsComponent } from './qoute-details/qoute-details.component';
 import { QouteFormComponent } from './qoute-form/qoute-form.component';
+import { CounterInputComponent } from './counter-input/counter-input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QouteComponent,
     QouteDetailsComponent,
-    QouteFormComponent
+    QouteFormComponent,
+    CounterInputComponent
   ],
   imports: [
     BrowserModule,
