@@ -6,6 +6,7 @@ import { QouteComponent } from './qoute/qoute.component';
 import { QouteDetailsComponent } from './qoute-details/qoute-details.component';
 import { QouteFormComponent } from './qoute-form/qoute-form.component';
 import { CounterInputComponent } from './counter-input/counter-input.component';
+import { DateCountPipe } from './date-count.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,6 +14,7 @@ import { CounterInputComponent } from './counter-input/counter-input.component';
     QouteDetailsComponent,
     QouteFormComponent,
     CounterInputComponent,
+    DateCountPipe,
     /*BackgroundImageDirective*/
   ],
   imports: [
